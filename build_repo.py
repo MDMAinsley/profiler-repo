@@ -6,7 +6,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-OUT_ZIPS = ROOT / "zips"
+OUT_ZIPS = ROOT / "packages"
 
 ADDONS = [
     ROOT / "repository.profiler",
@@ -32,7 +32,7 @@ def zip_addon(addon_dir: Path, addon_id: str, version: str) -> Path:
     target_dir = OUT_ZIPS / addon_id
     target_dir.mkdir(parents=True, exist_ok=True)
 
-    zip_path = target_dir / f"{addon_id}-{version}.zip"
+    zip_path = OUT_ZIPS / f"{addon_id}-{version}.zip"
 
     # Create zip where top-level folder is the addon folder name
     with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as z:
