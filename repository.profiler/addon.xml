@@ -6,9 +6,9 @@
   <extension point="xbmc.addon.repository"
              name="Profiler Repo">
     <dir>
-      <info>https://YOUR_DOMAIN_OR_GITHUB_PAGES/addons.xml</info>
-      <checksum>https://YOUR_DOMAIN_OR_GITHUB_PAGES/addons.xml.md5</checksum>
-      <datadir zip="true">https://YOUR_DOMAIN_OR_GITHUB_PAGES/zips/</datadir>
+      <info>https://mdmainsley.github.io/profiler-repo/addons.xml</info>
+      <checksum>https://mdmainsley.github.io/profiler-repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://mdmainsley.github.io/profiler-repo/zips/</datadir>
     </dir>
   </extension>
 
